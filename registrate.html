@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "login.css">
+    <title>registrar</title>
+</head>
+<body>
+    
+    <div class = "login-area">
+        <div class="form-box">
+            <div class="button-box">
+                <div id=btn></div>
+                <button type="button" class="toggle-btn" onclick="logIn()"> Log in</button>
+                <button type="button" class="toggle-btn" onclick="signUp()"> Sign up</button>
+            </div>
+            <form id="logIn" class ="input-group" method="get" action="/home.html" >
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="password" class="input-field" placeholder="EnterPassword" required>
+                <input  type="checkbox" class="check-box"><span id ="login-box">Remember Me</span>
+                <input type="submit"  class ="submit-btn" value="log in"/>
+            </form>
+            <form id="signUp" class ="input-group" method="get" action="/home.html">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="E-mail" required>
+                <input type="password" class="input-field" placeholder="EnterPassword" required>
+                <input type="checkbox" class="check-post"><span id="signup-box">I agree to the terms & conditions</span>
+                <input type="submit" class="submit-btn" value="sign up"/>
+            </form>
+        </div>
+            <script src= "login.JS"></script>
+        </div>
+</body>
+</html>
